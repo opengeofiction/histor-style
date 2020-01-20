@@ -40,13 +40,18 @@
       <PolygonPatternSymbolizer file="&symbols;/orchard.png" />
     </Rule>
     <Rule>
+      <Filter>[landuse] = 'plant_nursery'</Filter>
+      &maxscale_zoom10;
+      <PolygonPatternSymbolizer file="&symbols;/plant_nursery.png" />
+    </Rule>
+    <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       &maxscale_zoom13;
       <PolygonPatternSymbolizer file="&symbols;/vineyard.png" />
     </Rule>
     <Rule>
       &maxscale_zoom10;
-      &minscale_zoom13;
+      &minscale_zoom14;
       <Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
       <PolygonSymbolizer fill="#aacbaf"/>
     </Rule>
@@ -109,7 +114,7 @@
       <PolygonPatternSymbolizer file="&symbols;/grave_yard_generic.png" />
     </Rule>
     <Rule>
-      &maxscale_zoom9;
+      &maxscale_zoom10;
       <Filter>[landuse] = 'meadow' or [landuse] = 'grass'</Filter>
       <PolygonSymbolizer fill="#cfeca8"/>
     </Rule>
@@ -121,17 +126,18 @@
     <Rule>
       <Filter>[tourism] = 'zoo'</Filter>
       &maxscale_zoom10;
-      <PolygonPatternSymbolizer file="&symbols;/zoo.png" />
+      <PolygonPatternSymbolizer file="&symbols;/zoo.png"/>
     </Rule>
     <Rule>
       <Filter>[leisure] = 'common'</Filter>
       &maxscale_zoom10;
       <PolygonSymbolizer fill="#cfeca8"/>
     </Rule>
+<!-- Garden als "lime" -->
     <Rule>
       <Filter>[leisure] = 'garden'</Filter>
       &maxscale_zoom10;
-      <PolygonSymbolizer fill="#cfeca8"/>
+      <PolygonSymbolizer fill="#77e72f"/>
     </Rule>
     <Rule>
       <Filter>[leisure] = 'golf_course'</Filter>
@@ -165,10 +171,11 @@
       &maxscale_zoom9;
       <PolygonSymbolizer fill="#ddbf92"/>
     </Rule>
+<!-- Farmland heller dargestellt -->
     <Rule>
       <Filter>[landuse] = 'farm' or [landuse]='farmland'</Filter>
       &maxscale_zoom9;
-      <PolygonSymbolizer fill="#ead8bd"/>
+      <PolygonSymbolizer fill="#f5deb3"/>
     </Rule>
     <Rule>
       <Filter>[landuse] = 'recreation_ground' or [landuse] = 'conservation'</Filter>
@@ -351,7 +358,7 @@
           or aeroway in ('apron','aerodrome')
           or amenity in ('parking','university','college','school','hospital','kindergarten','grave_yard')
           or military in ('barracks','danger_area')
-          or "natural" in ('field','beach','desert','heath','mud','grassland','wood','sand','scrub')
+          or "natural" in ('field','beach','desert','heath','grassland','wood','sand','scrub')
           or power in ('station','sub_station','generator')
           or tourism in ('attraction','camp_site','caravan_site','picnic_site','zoo')
           or highway in ('services','rest_area')

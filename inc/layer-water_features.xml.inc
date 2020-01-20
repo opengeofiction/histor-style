@@ -37,7 +37,7 @@
       &maxscale_zoom11;
       &minscale_zoom12;
       <Filter>[man_made]='pier'</Filter>
-      <LineSymbolizer stroke="#f2efe9" stroke-width="1.5"/>
+      <LineSymbolizer stroke="#f4a460" stroke-width="1"/>
     </Rule>
     <Rule>
       &maxscale_zoom13;
@@ -49,7 +49,7 @@
       &maxscale_zoom13;
       &minscale_zoom15;
       <Filter>[man_made]='pier'</Filter>
-      <LineSymbolizer stroke="#f2efe9" stroke-width="3"/>
+      <LineSymbolizer stroke="#f4a460" stroke-width="2"/>
     </Rule>
     <Rule>
       &maxscale_zoom16;
@@ -61,7 +61,8 @@
       &maxscale_zoom16;
       &minscale_zoom18;
       <Filter>[man_made]='pier'</Filter>
-      <LineSymbolizer stroke="#f2efe9" stroke-width="7"/>
+      <LineSymbolizer stroke="#f4a460" stroke-width="4"/>
+      <LineSymbolizer stroke="white" stroke-width="2"/>
     </Rule>
 </Style>
 <!-- Deiche -->
@@ -71,7 +72,7 @@
       &minscale_zoom10;
       <Filter>[man_made]='dyke'</Filter>
       <LineSymbolizer stroke="#2d2" stroke-width="4"/>
-	  <LineSymbolizer stroke="#ccc" stroke-width="2"/>
+      <LineSymbolizer stroke="#ccc" stroke-width="2"/>
     </Rule>
     <Rule>
       &maxscale_zoom11;
@@ -85,30 +86,30 @@
       &minscale_zoom14;
       <Filter>[man_made]='dyke'</Filter>
       <LineSymbolizer stroke="#2d2" stroke-width="8"/>
-	  <LineSymbolizer stroke="#ccc" stroke-width="4"/>
+      <LineSymbolizer stroke="#ccc" stroke-width="4"/>
     </Rule>
     <Rule>
       &maxscale_zoom15;
       &minscale_zoom16;
       <Filter>[man_made]='dyke'</Filter>
       <LineSymbolizer stroke="#2d2" stroke-width="12"/>
-	  <LineSymbolizer stroke="#ccc" stroke-width="6"/>
+      <LineSymbolizer stroke="#ccc" stroke-width="6"/>
     </Rule>
 	<Rule>
       &maxscale_zoom17;
       &minscale_zoom18;
       <Filter>[man_made]='dyke'</Filter>
       <LineSymbolizer stroke="#2d2" stroke-width="16"/>
-	  <LineSymbolizer stroke="#ccc" stroke-width="8"/>
+      <LineSymbolizer stroke="#ccc" stroke-width="8"/>
     </Rule>
 </Style>
 <Style name="locks">
-<Rule>
+    <Rule>
       &maxscale_zoom15;
       &minscale_zoom18;
       <Filter>[waterway]='lock_gate'</Filter>
       <PointSymbolizer file="&symbols;/lock_gate.png"/>
-</Rule>
+    </Rule>
 </Style>
 <Layer name="dam" status="on" srs="&osm2pgsql_projection;">
     <StyleName>dam</StyleName>

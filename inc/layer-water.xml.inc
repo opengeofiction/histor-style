@@ -46,7 +46,7 @@
     <Rule>
       &maxscale_zoom10;
       <Filter>[natural] = 'marsh' or [natural] = 'wetland'</Filter>
-      <PolygonPatternSymbolizer file="&symbols;/marsh.png" />
+      <PolygonPatternSymbolizer file="&symbols;/wetland.png" />
     </Rule>
 </Style>
 <Style name="glaciers-text">

@@ -1,3 +1,4 @@
+<!-- histor-style 1-2020 -->
 <Style name="points">
      <Rule>
       &maxscale_zoom13;
@@ -46,6 +47,11 @@
       <PointSymbolizer file="&symbols;/bus_station.n.16.png" allow-overlap="false" placement="interior"/>
     </Rule>
     <Rule>
+      &maxscale_zoom16;
+      <Filter>[amenity]='bus_icon'</Filter>
+      <PointSymbolizer file="&symbols;/busicon.png" allow-overlap="false" placement="interior"/>
+    </Rule>
+    <Rule>
     &maxscale_zoom17;
     <Filter>[highway]='traffic_signals'</Filter>
     <PointSymbolizer file="&symbols;/traffic_light.png" placement="interior"/>
@@ -59,6 +65,23 @@
       &maxscale_zoom16;
       <Filter>[tourism]='camp_site'</Filter>
       <PointSymbolizer file="&symbols;/camping.n.16.png" placement="interior"/>
+    </Rule>
+<!-- neu = craftsman -->
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[amenity]='craftsman'</Filter>
+      <PointSymbolizer file="&symbols;/craftsman.png" placement="interior"/>
+    </Rule>
+<!-- neu = doctor / doctors -->
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[amenity]='doctor'</Filter>
+      <PointSymbolizer file="&symbols;/doctors.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[amenity]='doctors'</Filter>
+      <PointSymbolizer file="&symbols;/doctors.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom16;
@@ -81,17 +104,17 @@
       <PointSymbolizer file="&symbols;/chalet.p.16.png" placement="interior"/>
     </Rule>
      <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[amenity]='cinema'</Filter>
       <PointSymbolizer file="&symbols;/cinema.p.24.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[amenity]='fire_station'</Filter>
       <PointSymbolizer file="&symbols;/firestation.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[amenity]='fuel'</Filter>
       <PointSymbolizer file="&symbols;/fuel.p.16.png" placement="interior"/>
     </Rule>
@@ -145,15 +168,26 @@
       <Filter>[amenity]='courthouse'</Filter>
       <PointSymbolizer file="&symbols;/amenity_court.p.20.png" placement="interior"/>
     </Rule>
+<!-- new: a townhall-symbol -->
+    <Rule>
+      &maxscale_zoom14;
+      <Filter>[amenity]='townhall'</Filter>
+      <PointSymbolizer file="&symbols;/townhall.png" placement="interior"/>
+    </Rule>
     <Rule>
       &maxscale_zoom15;
       <Filter>[waterway]='lock' or [lock]='yes'</Filter>
       <PointSymbolizer file="&symbols;/lock_gate.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[man_made]='mast'</Filter>
       <PointSymbolizer file="&symbols;/communications.p.20.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[man_made]='flagpole'</Filter>
+      <PointSymbolizer file="&symbols;/flagpole.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom15;
@@ -213,7 +247,7 @@
     <Rule>
       &maxscale_zoom15;
       <Filter>[amenity]='post_office'</Filter>
-      <PointSymbolizer file="&symbols;/post_office.p.16.png" placement="interior"/>
+      <PointSymbolizer file="&symbols;/postoffice.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom16;
@@ -231,7 +265,7 @@
       <PointSymbolizer file="&symbols;/recycling.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[amenity]='restaurant'</Filter>
       <PointSymbolizer file="&symbols;/restaurant.p.16.png" placement="interior"/>
     </Rule>
@@ -270,6 +304,12 @@
       <Filter>[amenity]='prison'</Filter> 
       <PointSymbolizer file="&symbols;/amenity_prison.p.20.png" placement="interior"/>
     </Rule> 
+<!-- neu = veterinary -->
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[amenity]='veterinary'</Filter>
+      <PointSymbolizer file="&symbols;/veterinary.png" placement="interior"/>
+    </Rule>
     <Rule>
       &maxscale_zoom15;
       <Filter>[tourism]='viewpoint'</Filter>
@@ -281,9 +321,15 @@
       <PointSymbolizer file="&symbols;/tower_water.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom15;
+      &maxscale_zoom16;
       <Filter>[historic]='memorial'</Filter>
       <PointSymbolizer file="&symbols;/tourist_memorial.p.20.png" placement="interior"/>
+    </Rule>
+    <Rule>
+<!-- neu wreck / 15.01.2010 -->
+      &maxscale_zoom13;
+      <Filter>[historic]='wreck'</Filter>
+      <PointSymbolizer file="&symbols;/wreck.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom15;
@@ -382,8 +428,8 @@
          or shop is not null
          or tourism in ('alpine_hut','camp_site','caravan_site','guest_house','hostel','hotel','motel','museum','viewpoint','bed_and_breakfast','information','chalet')
          or highway in ('bus_stop','traffic_signals','ford')
-         or man_made in ('mast','water_tower')
-         or historic in ('memorial','archaeological_site')
+         or man_made in ('mast','flagpole','water_tower')
+         or historic in ('memorial','archaeological_site','wreck')
          or waterway='lock'
          or lock='yes'
          or leisure in ('playground','slipway')
@@ -401,8 +447,8 @@
          or shop is not null
          or tourism in ('alpine_hut','camp_site','caravan_site','guest_house','hostel','hotel','motel','museum','viewpoint','bed_and_breakfast','information','chalet')
          or highway in ('bus_stop','traffic_signals')
-         or man_made in ('mast','water_tower')
-         or historic in ('memorial','archaeological_site')
+         or man_made in ('mast','flagpole','water_tower')
+         or historic in ('memorial','archaeological_site','wreck')
          or leisure='playground'
       ) as points</Parameter>
       &datasource-settings;
