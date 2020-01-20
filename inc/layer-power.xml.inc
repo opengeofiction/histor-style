@@ -1,6 +1,6 @@
 <Style name="power_line">
     <Rule>
-      &maxscale_zoom14;
+      &maxscale_zoom12;
       &minscale_zoom15;
       <LineSymbolizer stroke="#777" stroke-width="1"/>
     </Rule>
@@ -17,7 +17,7 @@
 </Style>
 <Style name="power_towers">
     <Rule>
-      &maxscale_zoom14;
+      &maxscale_zoom12;
       &minscale_zoom14;
       <PointSymbolizer file="&symbols;/power_tower_3x3.png" allow-overlap="false"/>
     </Rule>

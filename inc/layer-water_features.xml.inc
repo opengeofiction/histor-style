@@ -64,9 +64,47 @@
       <LineSymbolizer stroke="#f2efe9" stroke-width="7"/>
     </Rule>
 </Style>
+<!-- Deiche -->
+<Style name="dykes">
+    <Rule>
+      &maxscale_zoom10;
+      &minscale_zoom10;
+      <Filter>[man_made]='dyke'</Filter>
+      <LineSymbolizer stroke="#2d2" stroke-width="4"/>
+	  <LineSymbolizer stroke="#ccc" stroke-width="2"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom11;
+      &minscale_zoom12;
+	  <Filter>[man_made]='dyke'</Filter>
+	  <LineSymbolizer stroke="#2d2" stroke-width="6"/>
+	  <LineSymbolizer stroke="#ccc" stroke-width="3"/> 
+    </Rule>
+    <Rule>
+      &maxscale_zoom13;
+      &minscale_zoom14;
+      <Filter>[man_made]='dyke'</Filter>
+      <LineSymbolizer stroke="#2d2" stroke-width="8"/>
+	  <LineSymbolizer stroke="#ccc" stroke-width="4"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom15;
+      &minscale_zoom16;
+      <Filter>[man_made]='dyke'</Filter>
+      <LineSymbolizer stroke="#2d2" stroke-width="12"/>
+	  <LineSymbolizer stroke="#ccc" stroke-width="6"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom17;
+      &minscale_zoom18;
+      <Filter>[man_made]='dyke'</Filter>
+      <LineSymbolizer stroke="#2d2" stroke-width="16"/>
+	  <LineSymbolizer stroke="#ccc" stroke-width="8"/>
+    </Rule>
+</Style>
 <Style name="locks">
 <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       &minscale_zoom18;
       <Filter>[waterway]='lock_gate'</Filter>
       <PointSymbolizer file="&symbols;/lock_gate.png"/>
@@ -103,6 +141,15 @@
      <Datasource>
       <Parameter name="table">
       (select way,man_made from &prefix;_line where man_made in ('pier','breakwater','groyne')) as piers
+      </Parameter>
+      &datasource-settings;
+    </Datasource>
+</Layer>
+<Layer name="dykes" status="on" srs="&osm2pgsql_projection;">
+     <StyleName>dykes</StyleName>
+     <Datasource>
+      <Parameter name="table">
+      (select way,man_made from &prefix;_line where man_made ='dyke') as dykes
       </Parameter>
       &datasource-settings;
     </Datasource>

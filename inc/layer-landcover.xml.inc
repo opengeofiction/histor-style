@@ -46,7 +46,7 @@
     </Rule>
     <Rule>
       &maxscale_zoom10;
-      &minscale_zoom14;
+      &minscale_zoom13;
       <Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
       <PolygonSymbolizer fill="#aacbaf"/>
     </Rule>
@@ -109,7 +109,7 @@
       <PolygonPatternSymbolizer file="&symbols;/grave_yard_generic.png" />
     </Rule>
     <Rule>
-      &maxscale_zoom10;
+      &maxscale_zoom9;
       <Filter>[landuse] = 'meadow' or [landuse] = 'grass'</Filter>
       <PolygonSymbolizer fill="#cfeca8"/>
     </Rule>
@@ -280,12 +280,6 @@
       <LineSymbolizer stroke="#eeeed1" stroke-width="0.3"/>
     </Rule>
     <Rule>
-      <Filter>[amenity] = 'prison'</Filter>
-      &maxscale_zoom14;
-      <PolygonPatternSymbolizer file="&symbols;/amenity_prison.png" />
-      <LineSymbolizer stroke="#555" stroke-width="0.3"/>
-    </Rule>
-    <Rule>
       <Filter>[aeroway] = 'apron'</Filter>
       &maxscale_zoom12;
       <PolygonSymbolizer fill="#e9d1ff"/>
@@ -296,9 +290,16 @@
       <PolygonSymbolizer fill-opacity="0.2" fill="#ccc"/>
       <LineSymbolizer stroke="#555" stroke-width="0.2"/>
     </Rule>
+<!-- "beach" bisher zoom 13 - sollte auch zoom 10 sein, dabei aber bis zoom 11 wie "sand" einfach gelb dargestellt -->
     <Rule>
       <Filter>[natural] = 'beach'</Filter>
-      &maxscale_zoom13;
+      &maxscale_zoom10;
+      &minscale_zoom11;
+      <PolygonSymbolizer fill="#ffdf88"/>
+    </Rule>
+    <Rule>
+      <Filter>[natural] = 'beach'</Filter>
+      &maxscale_zoom12;
       <PolygonPatternSymbolizer file="&symbols;/beach.png" />
     </Rule>
     <Rule>
@@ -348,7 +349,7 @@
        where landuse is not null
           or leisure is not null
           or aeroway in ('apron','aerodrome')
-          or amenity in ('parking','university','college','school','hospital','kindergarten','grave_yard','prison')
+          or amenity in ('parking','university','college','school','hospital','kindergarten','grave_yard')
           or military in ('barracks','danger_area')
           or "natural" in ('field','beach','desert','heath','mud','grassland','wood','sand','scrub')
           or power in ('station','sub_station','generator')
@@ -388,4 +389,5 @@
       &datasource-settings;
     </Datasource>
 </Layer>
+
 

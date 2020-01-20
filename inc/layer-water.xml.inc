@@ -1,5 +1,6 @@
 <Style name="water_areas">
-    <Rule>
+   <!-- Gletscher also ab 200 km sichtbar -->
+   <Rule>
       <Filter>[natural] = 'glacier'</Filter>
       &maxscale_zoom6;
       &minscale_zoom7;
@@ -27,9 +28,10 @@
       &maxscale_zoom6;
       <PolygonSymbolizer gamma=".75" fill="#b5d0d0"/>
     </Rule>
+	<!-- "Mud" eignet sich jedenfalls besser als Watt-Darsteller als das offizielle "wetland" -->
     <Rule>
       <Filter>[natural] = 'mud'</Filter>
-      &maxscale_zoom13;
+      &maxscale_zoom10;
       <PolygonPatternSymbolizer file="&symbols;/mud.png" />
     </Rule>
     <Rule>
@@ -38,9 +40,11 @@
       <PolygonSymbolizer fill="#f2efe9"/>
     </Rule>
 </Style>
+
+<!-- wetland  -->
 <Style name="water-areas-overlay">
     <Rule>
-      &maxscale_zoom13;
+      &maxscale_zoom10;
       <Filter>[natural] = 'marsh' or [natural] = 'wetland'</Filter>
       <PolygonPatternSymbolizer file="&symbols;/marsh.png" />
     </Rule>
@@ -48,8 +52,7 @@
 <Style name="glaciers-text">
     <Rule> 
       <Filter>[way_area] &gt;= 10000000</Filter>
-      &maxscale_zoom10;
-      <TextSymbolizer size="9" fill="#99f" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+      &maxscale_zoom10;      <TextSymbolizer size="9" fill="#99f" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[way_area] &gt;= 5000000 and [way_area] &lt; 10000000</Filter>
@@ -98,17 +101,17 @@
       <LineSymbolizer stroke="#b5d0d0" stroke-width="1.6"/>
     </Rule>
 </Style>
-
+<!-- Weirs and wadis should to be better to see, p.e. zoom12 = 3 km or zoom11 = 5 km -->
 <Style name="water_lines">
     <Rule>
       <Filter>[waterway]='weir'</Filter>
-      &maxscale_zoom15;
+      &maxscale_zoom12;
       &minscale_zoom18;
       <LineSymbolizer stroke-linejoin="round" stroke="#aaa" stroke-width="2" stroke-linecap="round"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='wadi'</Filter>
-      &maxscale_zoom13;
+      &maxscale_zoom11;
       &minscale_zoom15;
       <LineSymbolizer stroke-linejoin="round" stroke-dasharray="4,4" stroke="#b5d0d0" stroke-width="1" stroke-linecap="round"/>
     </Rule>
@@ -345,7 +348,6 @@
       &datasource-settings;
     </Datasource>
 </Layer>
-
 <Layer name="water-lines-low-zoom" status="on" srs="&osm2pgsql_projection;">
     <StyleName>water-lines-low-zoom</StyleName>
     <Datasource>
@@ -357,7 +359,6 @@
       &datasource-settings;
     </Datasource>
 </Layer>
-
 <Layer name="water_lines" status="on" srs="&osm2pgsql_projection;">
     <StyleName>water_lines</StyleName>
     <Datasource>

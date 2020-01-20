@@ -250,7 +250,7 @@
 <Style name="text">
     <Rule>
       <Filter>[place] = 'island'</Filter>
-      &maxscale_zoom12;
+      &maxscale_zoom10;
       &minscale_zoom18;
       <TextSymbolizer size="9" fill="#000" dy="0" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
@@ -266,7 +266,7 @@
     </Rule>
     <Rule>
       <Filter>[amenity]='library' or [amenity]='theatre' or [amenity]='courthouse'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <TextSymbolizer size="10" fill="#734a08" dy="12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -286,17 +286,17 @@
     </Rule>
      <Rule>
       <Filter>[amenity] = 'police'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <TextSymbolizer size="10" fill="#734a08" dy="10" fontset-name="book-fonts" halo-radius="1" wrap-width="30" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[amenity] = 'fire_station'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <TextSymbolizer size="10" fill="#734a08" dy="9" fontset-name="book-fonts" halo-radius="1" wrap-width="30" placement="interior">[name]</TextSymbolizer>
     </Rule>
      <Rule>
       <Filter>[amenity] = 'place_of_worship'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <TextSymbolizer size="10" fill="#000033" dy="11" fontset-name="book-fonts" halo-radius="1" wrap-width="30" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -306,32 +306,32 @@
     </Rule>
     <Rule>
       <Filter>[natural] = 'peak'</Filter>
-      &maxscale_zoom13;
+      &maxscale_zoom10;
       <TextSymbolizer size="10" fill="brown" dy="5" fontset-name="book-fonts" halo-radius="1" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[natural] = 'peak' and not [name] != ''</Filter>
-      &maxscale_zoom14;
+      &maxscale_zoom10;
       <TextSymbolizer size="9" fill="brown" dy="6" fontset-name="oblique-fonts" halo-radius="1" placement="interior">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[natural] = 'peak' and [name] != ''</Filter>
-      &maxscale_zoom14;
+      &maxscale_zoom10;
       <TextSymbolizer size="9" fill="brown" dy="18" fontset-name="oblique-fonts" halo-radius="1" placement="interior">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[natural] = 'volcano'</Filter>
-      &maxscale_zoom13;
+      &maxscale_zoom10;
       <TextSymbolizer size="10" fill="brown" dy="5" fontset-name="book-fonts" halo-radius="1" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[natural] = 'volcano' and not [name] != ''</Filter>
-      &maxscale_zoom14;
+      &maxscale_zoom10;
       <TextSymbolizer size="9" fill="brown" dy="6" fontset-name="oblique-fonts" halo-radius="1" placement="interior">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[natural] = 'volcano' and [name] != ''</Filter>
-      &maxscale_zoom14;
+      &maxscale_zoom10;
       <TextSymbolizer size="9" fill="brown" dy="16" fontset-name="oblique-fonts" halo-radius="1" placement="interior">[ele]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -339,9 +339,10 @@
       &maxscale_zoom15;
       <TextSymbolizer size="10" fill="brown" dy="9" fontset-name="book-fonts" halo-radius="1" wrap-width="20" placement="interior">[name]</TextSymbolizer>
     </Rule>
+
     <Rule>
       <Filter>[historic] = 'memorial' or [historic]='archaeological_site'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom12;
       <TextSymbolizer size="9" fill="brown" dy="12" fontset-name="book-fonts" halo-radius="1" wrap-width="20" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -383,16 +384,17 @@
     <Rule>
       <Filter>[amenity] = 'bank'</Filter>
       &maxscale_zoom17;
+
       <TextSymbolizer size="9" fill="black" dy="9" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[tourism] = 'hotel' or [tourism]='hostel' or [tourism]='chalet'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[amenity] = 'embassy'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom14;
       <TextSymbolizer size="9" fill="#0066ff" dy="8" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -412,12 +414,12 @@
     </Rule>
     <Rule>
       <Filter>[tourism] = 'camp_site'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <TextSymbolizer size="10" fill="#0066ff" dy="15" fontset-name="book-fonts" halo-radius="1" wrap-width="70" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[tourism] = 'caravan_site'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <TextSymbolizer size="10" fill="#0066ff" dy="19" fontset-name="book-fonts" halo-radius="1" wrap-width="70" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -427,7 +429,7 @@
     </Rule>
     <Rule>
       <Filter>[leisure] = 'marina'</Filter>
-      &maxscale_zoom15;
+      &maxscale_zoom14;
       &minscale_zoom16;
       <TextSymbolizer size="8" fill="blue" fontset-name="book-fonts" halo-radius="1" wrap-width="30" placement="interior">[name]</TextSymbolizer>
     </Rule>
@@ -443,13 +445,14 @@
       <TextSymbolizer size="8" fill="#734a08" fontset-name="book-fonts" halo-radius="1" wrap-width="30" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
+
       <Filter>[tourism] = 'theme_park'</Filter>
       &maxscale_zoom16;
       <TextSymbolizer size="10" fill="#734a08" fontset-name="book-fonts" halo-radius="1" wrap-width="30" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[tourism]='museum'</Filter>
-      &maxscale_zoom17;
+      &maxscale_zoom14;
       <TextSymbolizer size="10" fill="#734a08" dy="10" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -459,12 +462,12 @@
     </Rule>
     <Rule>
       <Filter>[tourism] = 'attraction'</Filter>
-      &maxscale_zoom16;
+      &maxscale_zoom14;
       <TextSymbolizer size="10" fill="#660033" fontset-name="book-fonts" halo-radius="2" wrap-width="10" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[amenity] = 'university'</Filter>
-      &maxscale_zoom15;
+      &maxscale_zoom14;
       <TextSymbolizer size="9" fill="#000033" fontset-name="bold-fonts" halo-radius="1" wrap-width="16" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -479,7 +482,7 @@
     </Rule>
     <Rule>
       <Filter>[man_made] = 'lighthouse'</Filter>
-      &maxscale_zoom15;
+      &maxscale_zoom14;
       <TextSymbolizer size="9" fill="#000033" dy="16" fontset-name="book-fonts" halo-radius="2" wrap-width="12" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -500,6 +503,7 @@
     <Rule>
       <Filter>[shop]='bakery' or [shop]='clothes' or [shop]='fashion' or [shop]='convenience' or [shop]='doityourself' or [shop]='hairdresser' or [shop]='butcher' or [shop]='car' or [shop]='car_repair' or [shop]='bicycle' or [shop]='florist'</Filter>
       &maxscale_zoom17;
+
       <TextSymbolizer size="8" fill="#939" dy="9" fontset-name="book-fonts" halo-radius="1" wrap-width="12" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
@@ -540,6 +544,7 @@
     <Rule>
       <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
       &maxscale_zoom17;
+
       &minscale_zoom18;
       <LineSymbolizer stroke="#506077" stroke-width="13" stroke-dasharray="4,2"/>
     </Rule>
@@ -566,6 +571,7 @@
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer stroke="#477147" stroke-width="14" stroke-dasharray="4,2"/>
+
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
@@ -574,6 +580,7 @@
       <LineSymbolizer stroke="#8d4346" stroke-width="4" stroke-dasharray="4,2"/>
     </Rule>
     <Rule>
+
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
@@ -599,6 +606,7 @@
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer stroke="#a37b48" stroke-width="10" stroke-dasharray="4,2"/>
@@ -606,6 +614,7 @@
     <Rule>
       <Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
       &maxscale_zoom15;
+
       &minscale_zoom16;
       <LineSymbolizer stroke="#a37b48" stroke-width="12" stroke-dasharray="4,2"/>
     </Rule>
@@ -692,6 +701,7 @@
     <Rule>
       <Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
       &maxscale_zoom12;
+
       &minscale_zoom12;
       <LineSymbolizer stroke-linejoin="round" stroke="#cdeacd" stroke-width="2.5" stroke-linecap="round"/>
     </Rule>
@@ -722,6 +732,7 @@
     <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
       &maxscale_zoom13;
+
       &minscale_zoom14;
       <LineSymbolizer stroke-linejoin="round" stroke="#f4c3c4" stroke-width="6.5" stroke-linecap="round"/>
     </Rule>
@@ -734,6 +745,7 @@
     <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
       &maxscale_zoom17;
+
       &minscale_zoom18;
       <LineSymbolizer stroke-linejoin="round" stroke="#f4c3c4" stroke-width="12" stroke-linecap="round"/>
     </Rule>
@@ -808,6 +820,7 @@
       &maxscale_zoom16;
       &minscale_zoom16;
       <LineSymbolizer stroke-linejoin="round" stroke="#fff" stroke-width="9.4" stroke-linecap="round"/>
+
     </Rule>
     <Rule>
       <Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road'</Filter>
@@ -957,6 +970,7 @@
     </Rule>
 </Style>
 <Style name="minor-roads-casing">
+
     <Rule>
       <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom12;
@@ -1072,6 +1086,7 @@
       <LineSymbolizer stroke-linejoin="round" stroke="#bbb" stroke-width="7.5" stroke-linecap="round"/>
     </Rule>
     <Rule>
+
       <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road') and not [tunnel]='yes'</Filter>
       &maxscale_zoom14;
       &minscale_zoom14;
@@ -1339,7 +1354,7 @@
       <LineSymbolizer stroke="white" stroke-width="2" stroke-dasharray="4,2"/>
     </Rule>
     <Rule>
-      &maxscale_zoom12;
+      &maxscale_zoom10;
       &minscale_zoom12;
       <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='motorway' or [construction]='motorway_link')</Filter>
       <LineSymbolizer stroke="#809bc0" stroke-width="2"/>
@@ -1358,6 +1373,7 @@
       <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='primary' or [construction]='primary_link')</Filter>
       <LineSymbolizer stroke="#ec989a" stroke-width="2"/>
       <LineSymbolizer stroke="white" stroke-width="2" stroke-dasharray="4,2"/>
+
     </Rule>
     <Rule>
       &maxscale_zoom12;
@@ -1487,7 +1503,7 @@
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
-      &maxscale_zoom12;
+      &maxscale_zoom10;
       &minscale_zoom12;
       <LineSymbolizer stroke="#809bc0" stroke-width="2"/>
     </Rule>
@@ -1530,6 +1546,7 @@
     <Rule>
       <Filter>[highway] = 'trunk' and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom17;
+
       &minscale_zoom18;
       <LineSymbolizer stroke-linejoin="round" stroke="#a9dba9" stroke-width="15.5" stroke-linecap="round"/>
    </Rule>
@@ -1561,6 +1578,7 @@
       <Filter>[highway] = 'secondary' and not [tunnel]='yes'</Filter>
       &maxscale_zoom12;
       &minscale_zoom12;
+
       <LineSymbolizer stroke-linejoin="round" stroke="#fed7a5" stroke-width="2" stroke-linecap="round"/>
     </Rule>
     <Rule>
@@ -1581,38 +1599,76 @@
       &minscale_zoom18;
       <LineSymbolizer stroke-linejoin="round" stroke="#fed7a5" stroke-width="15.5" stroke-linecap="round"/>
     </Rule>
+	<!-- railway - standard with Tunnel zoom 13 and more -->
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom18;
-      <Filter>[railway] = 'rail' and [tunnel] = 'yes'</Filter>
-      <LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="3" stroke-dasharray="1,9"/>
-      <LineSymbolizer stroke-linejoin="round" stroke="#fdfdfd" stroke-width="3" stroke-dasharray="0,1,1,8"/>
-      <LineSymbolizer stroke-linejoin="round" stroke="#ececec" stroke-width="3" stroke-dasharray="0,2,1,7"/>
-      <LineSymbolizer stroke-linejoin="round" stroke="#cacaca" stroke-width="3" stroke-dasharray="0,3,1,6"/>
-      <LineSymbolizer stroke-linejoin="round" stroke="#afafaf" stroke-width="3" stroke-dasharray="0,4,1,5"/>
-      <LineSymbolizer stroke-linejoin="round" stroke="#a1a1a1" stroke-width="3" stroke-dasharray="0,5,1,4"/>
-      <LineSymbolizer stroke-linejoin="round" stroke="#9b9b9b" stroke-width="3" stroke-dasharray="0,6,1,3"/>
+      <Filter>[railway] = 'rail' and [tunnel] = 'yes' and not ([service] = 'main' or [service] = 'local')</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#999999" stroke-width="3" stroke-dasharray="8,8"/>    
     </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'main' and [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#812222" stroke-width="3" stroke-dasharray="8,8"/>    
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'local' and [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#556724" stroke-width="3" stroke-dasharray="8,8"/>    
+    </Rule>
+	<!-- railway disused -->
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom18;
       <Filter>([railway] = 'disused' or [railway] = 'abandoned' or [railway]='construction') and not [highway] != ''</Filter>
       <LineSymbolizer stroke-linejoin="round" stroke="grey" stroke-width="2" stroke-dasharray="2,4"/>
     </Rule>
+	<!-- railway standard without tunnel, zoom 13 and more -->
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom13;
-      <Filter>[railway] = 'rail' and not [tunnel] = 'yes'</Filter>
+      <Filter>[railway] = 'rail' and not [tunnel] = 'yes' and not ([service] = 'main' or [service] = 'local')</Filter>
       <LineSymbolizer stroke-linejoin="round" stroke="#999999" stroke-width="3"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="8,12"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom13;
+      <Filter>[railway] = 'rail' and [service] = 'main' and not [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#812222" stroke-width="3"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="8,12"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom13;
+      <Filter>[railway] = 'rail' and [service] = 'local' and not [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#556724" stroke-width="3"/>
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="8,12"/>
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom18;
-      <Filter>[railway] = 'rail' and not [tunnel]='yes'</Filter>
+      <Filter>[railway] = 'rail' and not [tunnel]='yes' and not ([service] = 'main' or [service] = 'local')</Filter>
       <LineSymbolizer stroke-linejoin="round" stroke="#999999" stroke-width="3"/>
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="0,11,8,1"/>
     </Rule>
+	<Rule>
+      &maxscale_zoom14;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'main' and not [tunnel]='yes'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#812222" stroke-width="4"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="2" stroke-dasharray="0,11,8,1"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom14;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'local' and not [tunnel]='yes'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#556724" stroke-width="3"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="0,11,8,1"/>
+    </Rule>
+	<!-- railway sidings and narrow gauge  -->
     <Rule>
       &maxscale_zoom11;
       &minscale_zoom12;
@@ -1683,18 +1739,51 @@
       <Filter>[railway]='light_rail' and not [tunnel] = 'yes'</Filter>
       <LineSymbolizer stroke="#666" stroke-width="2"/>
     </Rule>
+	<!-- SUBWAY -->
+    <Rule>
+      &maxscale_zoom11;
+      &minscale_zoom11;
+      <Filter>[railway]='subway' and [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke="#2468ac" stroke-width="1.2" stroke-dasharray="5,3"/>
+    </Rule>
     <Rule>
       &maxscale_zoom12;
+      &minscale_zoom13;
+      <Filter>[railway]='subway' and [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke="#2468ac" stroke-width="2" stroke-dasharray="5,3"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom14;
       &minscale_zoom18;
       <Filter>[railway]='subway' and [tunnel] = 'yes'</Filter>
-      <LineSymbolizer stroke="#999" stroke-width="2" stroke-dasharray="5,3"/>
+      <LineSymbolizer stroke="#2468ac" stroke-width="3.5" stroke-dasharray="5,3"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom11;
+      &minscale_zoom11;
+      <Filter>[railway]='subway' and not [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke="#2468ac" stroke-width="1.2"/>
     </Rule>
     <Rule>
       &maxscale_zoom12;
+      &minscale_zoom13;
+      <Filter>[railway]='subway' and not [tunnel] = 'yes'</Filter>
+      <LineSymbolizer stroke="#2468ac" stroke-width="2"/>
+    </Rule><Rule>
+      &maxscale_zoom14;
+      &minscale_zoom14;
+      <Filter>[railway]='subway' and not [tunnel] = 'yes'</Filter>
+<LineSymbolizer stroke-linejoin="round" stroke="#2468ac" stroke-width="3"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="6,6"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom15;
       &minscale_zoom18;
       <Filter>[railway]='subway' and not [tunnel] = 'yes'</Filter>
-      <LineSymbolizer stroke="#999" stroke-width="2"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="#2468ac" stroke-width="4"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="6,6"/>
     </Rule>
+	<!-- tertiary highways -->
     <Rule>
       <Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road'</Filter>
       &maxscale_zoom10;
@@ -1710,6 +1799,7 @@
     <Rule>
       <Filter>[highway] = 'road'</Filter>
       &maxscale_zoom14;
+
       &minscale_zoom14;
       <LineSymbolizer stroke-linejoin="round" stroke="#ddd" stroke-width="3" stroke-linecap="round"/>
     </Rule>
@@ -1770,6 +1860,7 @@
     <Rule>
       <Filter>[highway] = 'living_street'</Filter>
       &maxscale_zoom14;
+
       &minscale_zoom14;
       <LineSymbolizer stroke-linejoin="round" stroke="#ccc" stroke-width="3" stroke-linecap="round"/>
     </Rule>
@@ -1802,6 +1893,7 @@
       &maxscale_zoom14;
       &minscale_zoom14;
       <LineSymbolizer stroke-linejoin="round" stroke="#ffffb3" stroke-width="6" stroke-linecap="round"/>
+
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary' and not [tunnel]='yes'</Filter>
@@ -1911,6 +2003,7 @@
       <Filter>([highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')) and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom13;
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.4"/>
+
       <LineSymbolizer stroke-linejoin="round" stroke="blue" stroke-width="1.2" stroke-dasharray="1,3" stroke-linecap="round"/>
     </Rule>
     <Rule>
@@ -1941,7 +2034,7 @@
     </Rule>
     <Rule>
       <Filter>[aeroway] = 'runway'</Filter>
-      &maxscale_zoom11;
+      &maxscale_zoom10;
       &minscale_zoom11;
       <LineSymbolizer stroke="#bbc" stroke-width="2"/>
     </Rule>
@@ -1964,7 +2057,7 @@
     </Rule>
     <Rule>
       <Filter>[aeroway] = 'taxiway'</Filter>
-      &maxscale_zoom11;
+      &maxscale_zoom10;
       &minscale_zoom13;
       <LineSymbolizer stroke="#bbc" stroke-width="1"/>
     </Rule>
@@ -1980,6 +2073,7 @@
       <LineSymbolizer stroke="#bbc" stroke-width="6"/>
     </Rule>
 </Style>
+
 <Style name="access">
      <Rule>
       <Filter>[access] = 'permissive' and ([highway]='unclassified' or [highway]='residential' or [highway]='footway')</Filter>
@@ -2023,6 +2117,7 @@
     </Rule>
     <Rule>
       <Filter>([access] = 'private' or [access] = 'no') and ([highway] = 'service' and not [service] = 'INT-minor')</Filter>
+
       &maxscale_zoom15;
       &minscale_zoom15;
       <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#efa9a9" stroke-linecap="round" stroke-dasharray="6,8" stroke-width="3"/>
@@ -2087,6 +2182,7 @@
       &maxscale_zoom14;
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.4"/>
       <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.8" stroke="#996600" stroke-linecap="round" stroke-dasharray="4,7,1,5" stroke-width="2"/>
+
     </Rule>
     <Rule>
       <Filter>[tracktype]='grade5'</Filter>
@@ -2103,6 +2199,7 @@
 </Style>
 <Style name="tracks-tunnels">
     <Rule>
+
       <Filter>[tracktype]='grade1'</Filter>
       &maxscale_zoom14;
       <LineSymbolizer stroke="grey" stroke-width="5" stroke-dasharray="4,2"/>
@@ -2319,6 +2416,7 @@
       <LineSymbolizer stroke="black" stroke-width="3.8"/>
     </Rule>
     <Rule>
+
       <Filter>[highway] = 'pedestrian'</Filter>
       &maxscale_zoom15;
       &minscale_zoom15;
@@ -2333,6 +2431,7 @@
       <Filter>[aeroway] = 'runway'</Filter>
       &maxscale_zoom14;
       <LineSymbolizer stroke="black" stroke-width="19"/>
+
     </Rule>
     <Rule>
       <Filter>[aeroway] = 'taxiway'</Filter>
@@ -2396,7 +2495,19 @@
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom18;
-      <Filter>[railway] = 'rail'</Filter>
+      <Filter>[railway] = 'rail' and not ([service]='main' or [service]='local')</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="black" stroke-width="6.5"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'main'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="black" stroke-width="7.5"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'local'</Filter>
       <LineSymbolizer stroke-linejoin="round" stroke="black" stroke-width="6.5"/>
     </Rule>
     <Rule>
@@ -2494,7 +2605,19 @@
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom18;
-      <Filter>[railway] = 'rail'</Filter>
+      <Filter>[railway] = 'rail' and not ([service]='main' or [service]='local')</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="5"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'main'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="5"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'local'</Filter>
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="5"/>
     </Rule>
     <Rule>
@@ -2563,6 +2686,7 @@
       <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
+
       <LineSymbolizer stroke-linejoin="round" stroke="#809bc0" stroke-width="10" stroke-linecap="round"/>
     </Rule>
     <Rule>
@@ -2623,6 +2747,7 @@
       <Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
+
       <LineSymbolizer stroke-linejoin="round" stroke="#fed7a5" stroke-width="10.5" stroke-linecap="round"/>
     </Rule>  
     <Rule>
@@ -2685,6 +2810,7 @@
       &minscale_zoom16;
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
     </Rule>
+
     <Rule>
       <Filter>[highway] = 'residential' or [highway] = 'unclassified'</Filter>
       &maxscale_zoom17;
@@ -2696,6 +2822,7 @@
       &maxscale_zoom14;
       &minscale_zoom15;
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="2" stroke-linecap="round"/>
+
     </Rule>
     <Rule>
       <Filter>[highway] = 'service'</Filter>
@@ -2742,11 +2869,18 @@
       &maxscale_zoom15;
       <LineSymbolizer stroke="#bbc" stroke-width="6"/>
     </Rule>
+<!-- Subway on bridge -->
+    <Rule>
+      &maxscale_zoom11;
+      &minscale_zoom13;
+      <Filter>[railway]='subway'</Filter>
+      <LineSymbolizer stroke="#2468ac" stroke-width="1.6"/>
+    </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom18;
       <Filter>[railway]='subway'</Filter>
-      <LineSymbolizer stroke="#999" stroke-width="2"/>
+      <LineSymbolizer stroke="#2468ac" stroke-width="2.5"/>
     </Rule>
     <Rule>
       &maxscale_zoom14;
@@ -2793,15 +2927,43 @@
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom13;
-      <Filter>[railway] = 'rail'</Filter>
+      <Filter>[railway] = 'rail' and not ([service]='main' or [service]='local')</Filter>
       <LineSymbolizer stroke-linejoin="round" stroke="#999999" stroke-width="3"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="8,12"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom13;
+      <Filter>[railway] = 'rail' and [service] = 'main'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#812222" stroke-width="4"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="8,12"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom13;
+      &minscale_zoom13;
+      <Filter>[railway] = 'rail' and [service] = 'local'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#556724" stroke-width="3"/>
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="8,12"/>
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom18;
-      <Filter>[railway] = 'rail'</Filter>
+      <Filter>[railway] = 'rail' and not ([service]='main' or [service]='local')</Filter>
       <LineSymbolizer stroke-linejoin="round" stroke="#999999" stroke-width="3"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="0,11,8,1"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom14;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'main'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#812222" stroke-width="4"/>
+      <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="2" stroke-dasharray="0,11,8,1"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom14;
+      &minscale_zoom18;
+      <Filter>[railway] = 'rail' and [service] = 'local'</Filter>
+      <LineSymbolizer stroke-linejoin="round" stroke="#556724" stroke-width="3"/>
       <LineSymbolizer stroke-linejoin="round" stroke="white" stroke-width="1" stroke-dasharray="0,11,8,1"/>
     </Rule>
     <Rule>
@@ -2919,6 +3081,7 @@
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
+
       &maxscale_zoom10;
       &minscale_zoom10;
       <LineSymbolizer stroke="#ec989a" stroke-width="2"/>
@@ -2942,7 +3105,7 @@
       &minscale_zoom11;
       <LineSymbolizer stroke="#fecc8b" stroke-width="2"/>
     </Rule>
-    <!-- RAIL -->
+    <!-- RAIL, zoom 6 to 9 -->
     <Rule>
       &maxscale_zoom6;
       &minscale_zoom8;
@@ -2967,17 +3130,42 @@
       <Filter>[railway] = 'tram' or [railway] = 'light_rail' or [railway] = 'narrow_gauge' or [railway]='funicular'</Filter>
       <LineSymbolizer stroke="#ccc" stroke-width="1"/>
     </Rule>
+	<!--  Rail, zoom 10 to 12 -->
     <Rule>
       &maxscale_zoom10;
       &minscale_zoom12;
-      <Filter>[railway] = 'rail' and not [tunnel]='yes'</Filter>
-      <LineSymbolizer stroke="#aaa" stroke-width="2"/>
+      <Filter>[railway] = 'rail' and not [tunnel]='yes' and not ([service] = 'main' or [service] = 'local')</Filter>
+      <LineSymbolizer stroke="#999" stroke-width="2"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom10;
+      &minscale_zoom12;
+      <Filter>[railway] = 'rail' and [service] = 'main' and not [tunnel]='yes'</Filter>
+      <LineSymbolizer stroke="#812222" stroke-width="2.5"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom10;
+      &minscale_zoom12;
+      <Filter>[railway] = 'rail' and [service] = 'local' and not [tunnel]='yes'</Filter>
+      <LineSymbolizer stroke="#556724" stroke-width="2"/>
     </Rule>
     <Rule>
       &maxscale_zoom10;
       &minscale_zoom12;
-      <Filter>[railway] = 'rail' and [tunnel]='yes'</Filter>
-      <LineSymbolizer stroke="#aaa" stroke-width="2" stroke-dasharray="5,2"/>
+      <Filter>[railway] = 'rail' and [tunnel]='yes' and not ([service] = 'main' or [service] = 'local')</Filter>
+      <LineSymbolizer stroke="#999" stroke-width="2" stroke-dasharray="5,2"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom10;
+      &minscale_zoom12;
+      <Filter>[railway] = 'rail' and [service] ='main' and [tunnel]='yes'</Filter>
+      <LineSymbolizer stroke="#812222" stroke-width="2.5" stroke-dasharray="5,2"/>
+    </Rule>
+	<Rule>
+      &maxscale_zoom10;
+      &minscale_zoom12;
+      <Filter>[railway] = 'rail' and [service] ='local' and [tunnel]='yes'</Filter>
+      <LineSymbolizer stroke="#556724" stroke-width="2" stroke-dasharray="5,2"/>
     </Rule>
     <Rule>
       &maxscale_zoom10;
@@ -3107,6 +3295,7 @@
       <ShieldSymbolizer size="10" fill="#fff" placement="line" file="&symbols;/mot_shield6.png" spacing="750" minimum-distance="30" fontset-name="bold-fonts">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
+
       <Filter>[highway] = 'motorway' and [length] = 8</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
@@ -3171,6 +3360,7 @@
       &maxscale_zoom15;
       &minscale_zoom18;
       <TextSymbolizer size="10" fill="black" placement="line" fontset-name="book-fonts" halo-radius="0">[name]</TextSymbolizer>
+
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary'</Filter>
@@ -3209,6 +3399,7 @@
     </Rule>
     <Rule>
       <Filter>[highway] = 'unclassified' or [highway] = 'residential'</Filter>
+
       &maxscale_zoom15;
       &minscale_zoom15;
       <TextSymbolizer size="8" fill="#000" spacing="300" placement="line" fontset-name="book-fonts" halo-radius="1">[name]</TextSymbolizer>
@@ -3220,6 +3411,7 @@
       <TextSymbolizer size="9" fill="#000" spacing="300" placement="line" fontset-name="book-fonts" halo-radius="1">[name]</TextSymbolizer>
     </Rule>
     <Rule>
+
       <Filter>[highway] = 'unclassified' or [highway] = 'residential'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
@@ -3485,6 +3677,7 @@
       &datasource-settings;
     </Datasource>
 </Layer>
+
 <Layer name="minor-roads-fill" status="on" srs="&osm2pgsql_projection;">
     <StyleName>minor-roads-fill-links</StyleName>
     <StyleName>minor-roads-fill</StyleName>
@@ -3492,10 +3685,11 @@
       <Parameter name="table">
       (select way,highway,horse,bicycle,foot,construction,aeroway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel,
-       case when bridge in ('yes','true','1','viaduct','swing','lift') then 'yes'::text else bridge end as bridge,
+       case when bridge in ('yes','true','1','viaduct') then 'yes'::text else bridge end as bridge,
        case when railway in ('spur','siding')
               or (railway='rail' and service in ('spur','siding','yard'))
             then 'spur-siding-yard'::text else railway end as railway,
+
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else service end as service
        from &prefix;_line
        where highway is not null
@@ -3535,7 +3729,7 @@
     <StyleName>roads</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,
+      (select way,highway,service,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel,
        case when railway='preserved' and service in ('spur','siding','yard') then 'INT-preserved-ssy'::text else railway end as railway
        from &prefix;_roads
@@ -3551,13 +3745,7 @@
 <Layer name="waterway-bridges" status="on" srs="&osm2pgsql_projection;">
     <StyleName>waterway-bridges</StyleName>
     <Datasource>
-      <Parameter name="table">
-      (select way,name
-       from &prefix;_line
-       where waterway='canal'
-         and bridge in ('yes','true','1','aqueduct','swing','lift')
-       order by z_order
-      ) as water</Parameter>
+      <Parameter name="table">(select way,name from &prefix;_line where waterway='canal' and bridge in ('yes','true','1','aqueduct') order by z_order) as water</Parameter>
       &datasource-settings;
     </Datasource>
 </Layer>
@@ -3569,7 +3757,7 @@
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text end as service
        from &prefix;_line
        where access is not null and highway is not null
-         and (bridge is null or bridge not in ('yes','true','1','viaduct','swing','lift'))
+         and (bridge is null or bridge not in ('yes','true','1','viaduct'))
       ) as access
       </Parameter>
       &datasource-settings;
@@ -3584,7 +3772,7 @@
        from &prefix;_line
        where oneway is not null
          and (highway is not null or railway is not null or waterway is not null)
-         and (bridge is null or bridge not in ('yes','true','1','viaduct','swing','lift'))
+         and (bridge is null or bridge not in ('yes','true','1','viaduct'))
       ) as directions
       </Parameter>
       &datasource-settings;
@@ -3596,7 +3784,7 @@
     <StyleName>bridges_fill</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,aeroway,horse,bicycle,foot,tracktype,
+      (select way,highway,aeroway,horse,bicycle,foot,tracktype,service,
        case when railway in ('spur','siding')
               or (railway='rail' and service in ('spur','siding','yard'))
             then 'INT-spur-siding-yard'::text else railway end as railway
@@ -3604,7 +3792,7 @@
        where (highway is not null
               or aeroway in ('runway','taxiway')
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction'))
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and (layer is null or layer = '0')
        order by z_order
       ) as roads
@@ -3620,7 +3808,7 @@
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text end as service
        from &prefix;_line
        where access is not null and highway is not null
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and (layer is null or layer in ('-5','-4','-3','-2','-1','0'))
       ) as access
       </Parameter>
@@ -3636,7 +3824,7 @@
        from &prefix;_line
        where oneway is not null
          and (highway is not null or railway is not null or waterway is not null)
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and (layer is null or layer in ('-5','-4','-3','-2','-1','0'))
       ) as directions
       </Parameter>
@@ -3649,7 +3837,7 @@
     <StyleName>bridges_fill</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,aeroway,horse,bicycle,foot,tracktype,
+      (select way,highway,aeroway,horse,bicycle,foot,tracktype,service,
        case when railway in ('spur','siding')
               or (railway='rail' and service in ('spur','siding','yard'))
             then 'INT-spur-siding-yard'::text else railway end as railway
@@ -3657,8 +3845,9 @@
        where (highway is not null
               or aeroway in ('runway','taxiway')
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction'))
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '1'
+
        order by z_order
       ) as roads
       </Parameter>
@@ -3673,7 +3862,7 @@
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text end as service
        from &prefix;_line
        where access is not null and highway is not null
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '1'
       ) as access
       </Parameter>
@@ -3688,8 +3877,9 @@
        case when oneway in ('yes','true','1') then 'yes'::text else oneway end as oneway
        from &prefix;_line
        where oneway is not null
+
          and (highway is not null or railway is not null or waterway is not null)
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '1'
       ) as directions
       </Parameter>
@@ -3702,7 +3892,7 @@
     <StyleName>bridges_fill</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,aeroway,horse,bicycle,foot,tracktype,
+      (select way,highway,aeroway,horse,bicycle,foot,tracktype,service,
        case when railway in ('spur','siding')
               or (railway='rail' and service in ('spur','siding','yard'))
             then 'INT-spur-siding-yard'::text else railway end as railway
@@ -3710,7 +3900,7 @@
        where (highway is not null
               or aeroway in ('runway','taxiway')
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction'))
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '2'
        order by z_order
       ) as roads
@@ -3726,7 +3916,7 @@
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text end as service
        from &prefix;_line
        where access is not null and highway is not null
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '2'
       ) as access
       </Parameter>
@@ -3742,9 +3932,10 @@
        from &prefix;_line
        where oneway is not null
          and (highway is not null or railway is not null or waterway is not null)
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '2'
       ) as directions
+
       </Parameter>
       &datasource-settings;
     </Datasource>
@@ -3755,7 +3946,7 @@
     <StyleName>bridges_fill</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,aeroway,horse,bicycle,foot,tracktype,
+      (select way,highway,aeroway,horse,bicycle,foot,tracktype,service,
        case when railway in ('spur','siding')
               or (railway='rail' and service in ('spur','siding','yard'))
             then 'INT-spur-siding-yard'::text else railway end as railway
@@ -3763,7 +3954,7 @@
        where (highway is not null
               or aeroway in ('runway','taxiway')
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction'))
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '3'
        order by z_order
       ) as roads
@@ -3779,7 +3970,7 @@
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text end as service
        from &prefix;_line
        where access is not null and highway is not null
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '3'
       ) as access
       </Parameter>
@@ -3795,7 +3986,7 @@
        from &prefix;_line
        where oneway is not null
          and (highway is not null or railway is not null or waterway is not null)
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '3'
       ) as directions
       </Parameter>
@@ -3808,7 +3999,7 @@
     <StyleName>bridges_fill</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,aeroway,horse,bicycle,foot,tracktype,
+      (select way,highway,aeroway,horse,bicycle,foot,tracktype,service,
        case when railway in ('spur','siding')
               or (railway='rail' and service in ('spur','siding','yard'))
             then 'INT-spur-siding-yard'::text else railway end as railway
@@ -3816,10 +4007,11 @@
        where (highway is not null
               or aeroway in ('runway','taxiway')
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction'))
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '4'
        order by z_order
       ) as roads
+
       </Parameter>
       &datasource-settings;
     </Datasource>
@@ -3832,7 +4024,7 @@
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text end as service
        from &prefix;_line
        where access is not null and highway is not null
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '4'
       ) as access
       </Parameter>
@@ -3848,7 +4040,7 @@
        from &prefix;_line
        where oneway is not null
          and (highway is not null or railway is not null or waterway is not null)
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '4'
       ) as directions
       </Parameter>
@@ -3861,7 +4053,7 @@
     <StyleName>bridges_fill</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway,aeroway,horse,bicycle,foot,tracktype,
+      (select way,highway,aeroway,horse,bicycle,foot,tracktype,service,
        case when railway in ('spur','siding')
               or (railway='rail' and service in ('spur','siding','yard'))
             then 'INT-spur-siding-yard'::text else railway end as railway
@@ -3869,7 +4061,7 @@
        where (highway is not null
               or aeroway in ('runway','taxiway')
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction'))
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '5'
        order by z_order
       ) as roads
@@ -3885,7 +4077,7 @@
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text end as service
        from &prefix;_line
        where access is not null and highway is not null
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '5'
       ) as access
       </Parameter>
@@ -3901,7 +4093,7 @@
        from &prefix;_line
        where oneway is not null
          and (highway is not null or railway is not null or waterway is not null)
-         and bridge in ('yes','true','1','viaduct','swing','lift')
+         and bridge in ('yes','true','1','viaduct')
          and layer = '5'
       ) as directions
       </Parameter>
@@ -3963,7 +4155,7 @@
      <Datasource>
       <Parameter name="table">
       (select way,highway,aeroway,ref,char_length(ref) as length,
-       case when bridge in ('yes','true','1','viaduct','swing','lift') then 'yes'::text else bridge end as bridge
+       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge
        from &prefix;_line
        where (highway is not null or aeroway is not null)
          and ref is not null

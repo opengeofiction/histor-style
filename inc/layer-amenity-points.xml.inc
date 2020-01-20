@@ -66,7 +66,7 @@
       <PointSymbolizer file="&symbols;/transport_ford.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       <Filter>[tourism]='caravan_site'</Filter>
       <PointSymbolizer file="&symbols;/caravan_park.p.24.png" placement="interior"/>
     </Rule>
@@ -106,7 +106,7 @@
       <PointSymbolizer file="&symbols;/bandb.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom15;
+      &maxscale_zoom13;
       <Filter>[amenity]='hospital'</Filter>
       <PointSymbolizer file="&symbols;/hospital.p.16.png" placement="interior"/>
     </Rule>
@@ -116,12 +116,12 @@
       <PointSymbolizer file="&symbols;/hostel.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[tourism]='hotel'</Filter>
       <PointSymbolizer file="&symbols;/hotel2.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[tourism]='motel'</Filter>
       <PointSymbolizer file="&symbols;/motel.p.20.png" placement="interior"/>
     </Rule>
@@ -131,17 +131,17 @@
       <PointSymbolizer file="&symbols;/information.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[amenity]='embassy'</Filter>
       <PointSymbolizer file="&symbols;/embassy.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[amenity]='library'</Filter>
       <PointSymbolizer file="&symbols;/library.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[amenity]='courthouse'</Filter>
       <PointSymbolizer file="&symbols;/amenity_court.p.20.png" placement="interior"/>
     </Rule>
@@ -156,7 +156,7 @@
       <PointSymbolizer file="&symbols;/communications.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[tourism]='museum'</Filter>
       <PointSymbolizer file="&symbols;/museum.p.16.png" placement="interior"/>
     </Rule>
@@ -171,27 +171,27 @@
       <PointSymbolizer file="&symbols;/parking_private.p.16.png" allow-overlap="false" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[amenity]='pharmacy'</Filter>
       <PointSymbolizer file="&symbols;/pharmacy.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       <Filter>[amenity]='place_of_worship' and [religion] = 'christian'</Filter>
       <PointSymbolizer file="&symbols;/christian3.p.14.png" allow-overlap="false" placement="interior"/>
      </Rule>
      <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       <Filter>[amenity]='place_of_worship' and [religion] = 'muslim'</Filter>
       <PointSymbolizer file="&symbols;/islamic3.p.16.png" allow-overlap="false" placement="interior"/>
      </Rule>
      <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       <Filter>[amenity]='place_of_worship' and [religion] = 'sikh'</Filter>
       <PointSymbolizer file="&symbols;/sikh3.p.16.png" allow-overlap="false" placement="interior"/>
      </Rule>
      <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       <Filter>[amenity]='place_of_worship' and [religion] = 'jewish'</Filter>
       <PointSymbolizer file="&symbols;/jewish3.p.16.png" allow-overlap="false" placement="interior"/>
      </Rule>
@@ -201,7 +201,7 @@
       <PointSymbolizer file="&symbols;/place_of_worship3.p.16.png" allow-overlap="false" placement="interior"/>
      </Rule>
      <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[amenity]='police'</Filter>
       <PointSymbolizer file="&symbols;/police.p.16.png" placement="interior"/>
     </Rule>
@@ -211,7 +211,7 @@
       <PointSymbolizer file="&symbols;/post_box.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[amenity]='post_office'</Filter>
       <PointSymbolizer file="&symbols;/post_office.p.16.png" placement="interior"/>
     </Rule>
@@ -251,7 +251,7 @@
       <PointSymbolizer file="&symbols;/sosphone.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[amenity]='theatre'</Filter>
       <PointSymbolizer file="&symbols;/theatre.p.20.png" placement="interior"/>
     </Rule>
@@ -271,39 +271,29 @@
       <PointSymbolizer file="&symbols;/amenity_prison.p.20.png" placement="interior"/>
     </Rule> 
     <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       <Filter>[tourism]='viewpoint'</Filter>
       <PointSymbolizer file="&symbols;/view_point.p.16.png" placement="interior"/>
     </Rule>
-    <Rule>
-      &maxscale_zoom17;
-      <Filter>[amenity]='veterinary'</Filter>
-      <PointSymbolizer file="&symbols;/amenity_veterinary.p.16.png" placement="interior"/>
-    </Rule>
-    <Rule> 
-      &maxscale_zoom18; 
-      <Filter>[amenity]='bench'</Filter> 
-      <PointSymbolizer file="&symbols;/amenity_bench.p.8.png" placement="interior"/>
-    </Rule> 
-    <Rule> 
-      &maxscale_zoom18; 
-      <Filter>[amenity]='waste_basket'</Filter> 
-      <PointSymbolizer file="&symbols;/amenity_waste_basket.p.8.png" placement="interior"/>
-    </Rule> 
     <Rule>
       &maxscale_zoom17;
       <Filter>[man_made]='water_tower'</Filter>
       <PointSymbolizer file="&symbols;/tower_water.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom15;
       <Filter>[historic]='memorial'</Filter>
       <PointSymbolizer file="&symbols;/tourist_memorial.p.20.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       <Filter>[historic]='archaeological_site'</Filter>
       <PointSymbolizer file="&symbols;/tourist_archaeological2.glow.16.png" placement="interior"/>
+    </Rule>
+   <Rule>
+      &maxscale_zoom14;
+      <Filter>[shop]='mercado'</Filter>
+      <PointSymbolizer file="&symbols;/mercado.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom16;
@@ -317,38 +307,13 @@
     </Rule>
     <Rule>
       &maxscale_zoom17;
-      <Filter>[shop]='bicycle'</Filter>
-      <PointSymbolizer file="&symbols;/shopping_bicycle.p.16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
-      <Filter>[shop]='books'</Filter>
-      <PointSymbolizer file="&symbols;/shop_books.p_16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
       <Filter>[shop]='butcher'</Filter>
       <PointSymbolizer file="&symbols;/shop_butcher.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
-      <Filter>[shop]='car'</Filter>
-      <PointSymbolizer file="&symbols;/shopping_car.p.16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
-      <Filter>[shop]='car_repair'</Filter>
-      <PointSymbolizer file="&symbols;/shopping_car_repair.p.16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
       <Filter>[shop]='clothes' or [shop]='fashion'</Filter>
       <PointSymbolizer file="&symbols;/shop_clothes.p.16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
-      <Filter>[shop]='computer'</Filter>
-      <PointSymbolizer file="&symbols;/shop_computer.p_16.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
@@ -367,23 +332,8 @@
     </Rule>
     <Rule>
       &maxscale_zoom17;
-      <Filter>[shop]='dry_cleaning'</Filter>
-      <PointSymbolizer file="&symbols;/shop_dry_cleaning.p_16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
       <Filter>[shop]='florist'</Filter>
       <PointSymbolizer file="&symbols;/florist.p.16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
-      <Filter>[shop]='gift'</Filter>
-      <PointSymbolizer file="&symbols;/shop_gift.p_16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
-      <Filter>[shop]='greengrocer'</Filter>
-      <PointSymbolizer file="&symbols;/shop_greengrocer.p_16.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
@@ -392,26 +342,21 @@
     </Rule>
     <Rule>
       &maxscale_zoom17;
-      <Filter>[shop]='jewelry'</Filter>
-      <PointSymbolizer file="&symbols;/shop_jewelry.p_16.png" placement="interior"/>
+      <Filter>[shop]='car'</Filter>
+      <PointSymbolizer file="&symbols;/shopping_car.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
-      <Filter>[shop]='mobile_phone'</Filter>
-      <PointSymbolizer file="&symbols;/shop_mobile_phone.p_16.png" placement="interior"/>
+      <Filter>[shop]='car_repair'</Filter>
+      <PointSymbolizer file="&symbols;/shopping_car_repair.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
-      <Filter>[shop]='optician'</Filter>
-      <PointSymbolizer file="&symbols;/shop_optician.p_16.png" placement="interior"/>
+      <Filter>[shop]='bicycle'</Filter>
+      <PointSymbolizer file="&symbols;/shopping_bicycle.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
-      <Filter>[shop]='pet'</Filter>
-      <PointSymbolizer file="&symbols;/shop_pet.p_16.png" placement="interior"/>
-    </Rule>
-    <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[leisure]='playground'</Filter>
       <PointSymbolizer file="&symbols;/playground.p.20.png" placement="interior"/>
     </Rule>
@@ -421,7 +366,7 @@
       <PointSymbolizer file="&symbols;/picnic.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom17;
+      &maxscale_zoom16;
       <Filter>[leisure]='slipway'</Filter>
       <PointSymbolizer file="&symbols;/transport_slipway.p.20.png" placement="interior"/>
     </Rule>

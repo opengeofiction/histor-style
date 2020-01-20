@@ -1,4 +1,5 @@
 <Style name="symbols">
+<!-- Flugverkehr -->
      <Rule>
       &maxscale_zoom16;
       <Filter>[aeroway]='helipad'</Filter>
@@ -6,14 +7,20 @@
       <TextSymbolizer size="8" fill="#6692da" dy="-10" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
+      &maxscale_zoom8;
+      &minscale_zoom8;
+      <Filter>[aeroway]='airport'</Filter>
+      <PointSymbolizer file="&symbols;/airport.p.16.png"/>
+    </Rule>
+    <Rule>
       &maxscale_zoom9;
-      &minscale_zoom10;
+      &minscale_zoom9;
       <Filter>[aeroway]='airport'</Filter>
       <PointSymbolizer file="&symbols;/airport.p.16.png"/>
       <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
-      &maxscale_zoom11;
+      &maxscale_zoom10;
       &minscale_zoom12;
       <Filter>[aeroway]='airport'</Filter>
       <TextSymbolizer size="9" fill="#6692da" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
@@ -31,8 +38,112 @@
       <Filter>[aeroway]='aerodrome'</Filter>
       <TextSymbolizer size="8" fill="#6692da" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
+<!-- Hafensymbol -->
+     <Rule>
+      &maxscale_zoom8;
+      &minscale_zoom8;
+      <Filter>[harbour]='main'</Filter>
+      <PointSymbolizer file="&symbols;/harbour11.png"/>
+      <TextSymbolizer size="6" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+     </Rule>
+      <Rule>
+      &maxscale_zoom9;
+      &minscale_zoom9;
+      <Filter>[harbour]='main'</Filter>
+      <PointSymbolizer file="&symbols;/harbour16.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+     </Rule>
+     <Rule>
+      &maxscale_zoom10;
+      &minscale_zoom14;
+      <Filter>[harbour]='main'</Filter>
+      <PointSymbolizer file="&symbols;/harbour24.png"/>
+      <TextSymbolizer size="11" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+      </Rule>
+      <Rule>
+      &maxscale_zoom10;
+      &minscale_zoom14;
+      <Filter>[harbour]='navy'</Filter>
+      <PointSymbolizer file="&symbols;/navy24.png"/>
+      <TextSymbolizer size="11" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+      </Rule>
+      <Rule>
+      &maxscale_zoom10;
+      &minscale_zoom11;
+      <Filter>[harbour]='middle'</Filter>
+      <PointSymbolizer file="&symbols;/harbour11.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
     <Rule>
-      &maxscale_zoom14;
+      &maxscale_zoom12;
+      &minscale_zoom15;
+      <Filter>[harbour]='middle'</Filter>
+      <PointSymbolizer file="&symbols;/harbour16.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+      <Rule>
+      &maxscale_zoom12;
+      <Filter>[harbour]='small'</Filter>
+      <PointSymbolizer file="&symbols;/harbour11.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+<!-- Bergwerke -->
+	 <Rule>
+      &maxscale_zoom9;
+      &minscale_zoom11;
+      <Filter>[man_made]='coal'</Filter>
+      <PointSymbolizer file="&symbols;/coal15.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom12;
+      <Filter>[man_made]='coal'</Filter>
+      <PointSymbolizer file="&symbols;/coal25.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+	<Rule>
+      &maxscale_zoom9;
+      &minscale_zoom11;
+      <Filter>[man_made]='copper'</Filter>
+      <PointSymbolizer file="&symbols;/copper15.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom12;
+      <Filter>[man_made]='copper'</Filter>
+      <PointSymbolizer file="&symbols;/copper25.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+	<Rule>
+      &maxscale_zoom9;
+      &minscale_zoom11;
+      <Filter>[man_made]='metal'</Filter>
+      <PointSymbolizer file="&symbols;/metal15.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom12;
+      <Filter>[man_made]='metal'</Filter>
+      <PointSymbolizer file="&symbols;/metal25.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+<!--  Mineralquellen  -->
+<Rule>
+      &maxscale_zoom9;
+      &minscale_zoom11;
+      <Filter>[man_made]='mineral_water'</Filter>
+      <PointSymbolizer file="&symbols;/minwater15.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom12;
+      <Filter>[man_made]='mineral_water'</Filter>
+      <PointSymbolizer file="&symbols;/minwater25.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+<!-- level crossing -->
+    <Rule>
+      &maxscale_zoom13;
       &minscale_zoom15;
       <Filter>[railway]='level_crossing'</Filter>
       <PointSymbolizer file="&symbols;/level_crossing.png" placement="interior"/>
@@ -42,18 +153,26 @@
       <Filter>[railway]='level_crossing'</Filter>
       <PointSymbolizer file="&symbols;/level_crossing2.png" placement="interior"/>
     </Rule>
+<!-- lighthouse -->
     <Rule>
-      &maxscale_zoom15;
+      &maxscale_zoom10;
+      &minscale_zoom10;
       <Filter>[man_made]='lighthouse'</Filter>
-      <PointSymbolizer file="&symbols;/lighthouse.p.20.png" placement="interior"/>
+      <PointSymbolizer file="&symbols;/lighthouse.p.13.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom11;
+      <Filter>[man_made]='lighthouse'</Filter>
+      <PointSymbolizer file="&symbols;/lighthouse.p.20.png" placement="interior"/>
+    </Rule>
+<!-- peaks -->
+    <Rule>
+      &maxscale_zoom9;
       <Filter>[natural]='peak'</Filter>
       <PointSymbolizer file="&symbols;/peak.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom11;
+      &maxscale_zoom9;
       <Filter>[natural]='volcano'</Filter>
       <PointSymbolizer file="&symbols;/volcano.png" placement="interior"/>
     </Rule>
@@ -68,7 +187,7 @@
       <PointSymbolizer file="&symbols;/spring.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom15;
       &minscale_zoom16;
       <Filter>[natural]='tree'</Filter>
       <PointSymbolizer file="&symbols;/tree.png" ignore-placement="true" placement="interior"/>
@@ -87,6 +206,17 @@
       &maxscale_zoom16;
       <Filter>[man_made]='windmill'</Filter>
       <PointSymbolizer file="&symbols;/windmill.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom10;
+	  &minscale_zoom12;
+      <Filter>[man_made]='borehole'</Filter>
+      <PointSymbolizer file="&symbols;/oil09.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom13;
+      <Filter>[man_made]='borehole'</Filter>
+      <PointSymbolizer file="&symbols;/oil15.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
@@ -122,9 +252,10 @@
       (select *
       from &prefix;_point
       where aeroway in ('airport','aerodrome','helipad')
+         or harbour in ('main','navy','middle','small')
          or barrier in ('bollard','gate','lift_gate','block')
          or highway in ('mini_roundabout','gate')
-         or man_made in ('lighthouse','power_wind','windmill','mast')
+         or man_made in ('coal','copper','metal','mineral_water','lighthouse','power_wind','windmill','mast','borehole')
          or (power='generator' and ("generator:source"='wind' or power_source='wind'))
          or "natural" in ('peak','volcano','spring','tree','cave_entrance')
          or railway='level_crossing'
@@ -139,9 +270,10 @@
       (select *
       from &prefix;_polygon
       where aeroway in ('airport','aerodrome','helipad')
+         or harbour in ('main','navy','middle','small')
          or barrier in ('bollard','gate','lift_gate','block')
          or highway in ('mini_roundabout','gate')
-         or man_made in ('lighthouse','power_wind','windmill','mast')
+         or man_made in ('coal','copper','metal','mineral_water','lighthouse','power_wind','windmill','mast','borehole')
          or (power='generator' and ("generator:source"='wind' or power_source='wind'))
          or "natural" in ('peak','volcano','spring','tree')
          or railway='level_crossing'

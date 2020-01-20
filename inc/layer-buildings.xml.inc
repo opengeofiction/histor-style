@@ -1,7 +1,7 @@
 <Style name="buildings-lz">
     <Rule>
       <Filter>[railway] = 'station' or [building] = 'station'</Filter>
-      &maxscale_zoom10;
+      &maxscale_zoom9;
       <PolygonSymbolizer fill="#d4aaaa"/>
     </Rule>
     <Rule>
