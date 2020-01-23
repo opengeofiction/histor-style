@@ -65,41 +65,46 @@
       <LineSymbolizer stroke="white" stroke-width="2"/>
     </Rule>
 </Style>
-<!-- Deiche -->
+<!-- Deiche, Name wird im main osm-file eingespielt -->
 <Style name="dykes">
     <Rule>
       &maxscale_zoom10;
       &minscale_zoom10;
       <Filter>[man_made]='dyke'</Filter>
-      <LineSymbolizer stroke="#2d2" stroke-width="4"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="7" stroke-dasharray="2,2"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="4" stroke-linecap="round"/>
       <LineSymbolizer stroke="#ccc" stroke-width="2"/>
     </Rule>
     <Rule>
       &maxscale_zoom11;
       &minscale_zoom12;
 	  <Filter>[man_made]='dyke'</Filter>
-	  <LineSymbolizer stroke="#2d2" stroke-width="6"/>
+          <LineSymbolizer stroke="#2d2" stroke-width="10" stroke-dasharray="2,2"/>
+	  <LineSymbolizer stroke="#2d2" stroke-width="6" stroke-linecap="round"/>
 	  <LineSymbolizer stroke="#ccc" stroke-width="3"/> 
     </Rule>
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom14;
       <Filter>[man_made]='dyke'</Filter>
-      <LineSymbolizer stroke="#2d2" stroke-width="8"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="12" stroke-dasharray="2,2"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="8" stroke-linecap="round"/>
       <LineSymbolizer stroke="#ccc" stroke-width="4"/>
     </Rule>
     <Rule>
       &maxscale_zoom15;
       &minscale_zoom16;
       <Filter>[man_made]='dyke'</Filter>
-      <LineSymbolizer stroke="#2d2" stroke-width="12"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="16" stroke-dasharray="3,3"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="12" stroke-linecap="round"/>
       <LineSymbolizer stroke="#ccc" stroke-width="6"/>
     </Rule>
 	<Rule>
       &maxscale_zoom17;
       &minscale_zoom18;
       <Filter>[man_made]='dyke'</Filter>
-      <LineSymbolizer stroke="#2d2" stroke-width="16"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="20" stroke-dasharray="3,3"/>
+      <LineSymbolizer stroke="#2d2" stroke-width="16" stroke-linecap="round"/>
       <LineSymbolizer stroke="#ccc" stroke-width="8"/>
     </Rule>
 </Style>
