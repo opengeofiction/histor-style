@@ -99,7 +99,7 @@
       <LineSymbolizer stroke="#2d2" stroke-width="12" stroke-linecap="round"/>
       <LineSymbolizer stroke="#ccc" stroke-width="6"/>
     </Rule>
-	<Rule>
+    <Rule>
       &maxscale_zoom17;
       &minscale_zoom18;
       <Filter>[man_made]='dyke'</Filter>
@@ -155,7 +155,7 @@
      <StyleName>dykes</StyleName>
      <Datasource>
       <Parameter name="table">
-      (select way,man_made from &prefix;_line where man_made ='dyke') as dykes
+      (select way,man_made from &prefix;_line where man_made = 'dyke') as dykes
       </Parameter>
       &datasource-settings;
     </Datasource>

@@ -11,13 +11,13 @@
       <Filter>[place] = 'country'</Filter>
       &maxscale_zoom2;
       &minscale_zoom3;
-      <TextSymbolizer size="8" fill="#9d6c9d" dy="0" fontset-name="book-fonts" halo-radius="1" wrap-width="20" text-transform="uppercase">[name]</TextSymbolizer>
+      <TextSymbolizer size="8" fill="#9d6c9d" dy="0" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'country'</Filter>
       &maxscale_zoom4;
       &minscale_zoom6;
-      <TextSymbolizer size="10" fill="#9d6c9d" dy="0" fontset-name="book-fonts" halo-radius="1" wrap-width="20" text-transform="uppercase">[name]</TextSymbolizer>
+      <TextSymbolizer size="10" fill="#9d6c9d" dy="0" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <Style name="state">
@@ -93,7 +93,7 @@
       <Filter>[place] = 'city' or [place]='metropolis'</Filter>
       &maxscale_zoom11;
       &minscale_zoom14;
-      <TextSymbolizer size="14" fill="#000" dy="0" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      <TextSymbolizer size="16" fill="#000" dy="0" fontset-name="book-fonts" halo-radius="2" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <Style name="town">
@@ -107,12 +107,12 @@
       <Filter>[place] = 'town' or [place]='large_town' or [place]='small_town'</Filter>
       &maxscale_zoom11;
       &minscale_zoom13;
-      <TextSymbolizer size="10" fill="#000" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+      <TextSymbolizer size="12" fill="#000" fontset-name="book-fonts" halo-radius="2" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'town' or [place]='large_town' or [place]='small_town'</Filter>
       &maxscale_zoom14;
-      <TextSymbolizer size="14" fill="#777777" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+      <TextSymbolizer size="16" fill="black" fontset-name="book-fonts" halo-radius="2" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <!-- Landscape analog town, aber mit brauner Schrift und ab zoom 8 -->
@@ -121,18 +121,18 @@
       <Filter>[place] = 'landscape'</Filter>
       &maxscale_zoom8;
       &minscale_zoom10;
-      <TextSymbolizer size="10" fill="#808000" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+      <TextSymbolizer size="12" fill="#808000" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'landscape'</Filter>
       &maxscale_zoom11;
       &minscale_zoom13;
-      <TextSymbolizer size="12" fill="#808000" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+      <TextSymbolizer size="14" fill="#808000" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'landscape'</Filter>
       &maxscale_zoom14;
-      <TextSymbolizer size="14" fill="#808000" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+      <TextSymbolizer size="16" fill="#808000" fontset-name="book-fonts" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <!-- Bight analog landscape, aber mit blauer Schrift und ab zoom 6 -->
@@ -166,25 +166,37 @@
       <Filter>[place] = 'suburb'</Filter>
       &maxscale_zoom12;
       &minscale_zoom13;
-      <TextSymbolizer size="10" fill="#000" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      <TextSymbolizer size="10" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'suburb'</Filter>
       &maxscale_zoom14;
-      <TextSymbolizer size="13" fill="#777777" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      &minscale_zoom15;
+      <TextSymbolizer size="14" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'suburb'</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="18" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <Style name="village">
     <Rule>
       <Filter>[place] = 'village' or [place]='large_village'</Filter>
       &maxscale_zoom11;
-      &minscale_zoom14;
-      <TextSymbolizer size="9" fill="#000" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      &minscale_zoom13;
+      <TextSymbolizer size="10" fill="black" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'village' or [place]='large_village'</Filter>
-      &maxscale_zoom15;
-      <TextSymbolizer size="12" fill="#777777" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      &maxscale_zoom14;
+      &minscale_zoom15;
+      <TextSymbolizer size="14" fill="black" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'village' or [place]='large_village'</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer size="18" fill="black" fontset-name="book-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <!-- Locality analog village, aber mit brauner Schrift -->
@@ -237,7 +249,8 @@
       (select way,place,name,ref
        from &prefix;_point
        where place in ('country','state','county')
-      ) as placenames</Parameter>
+      ) as placenames
+	  </Parameter>
       &datasource-settings;
     </Datasource>
 </Layer>

@@ -11,6 +11,21 @@
       <PointSymbolizer file="&symbols;/shelter2.p.16.png" placement="interior"/>
     </Rule>
     <Rule>
+      &maxscale_zoom12;
+      <Filter>[amenity]='bird_sanctuary'</Filter>
+      <PointSymbolizer file="&symbols;/bird_sanctuary.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom15;
+      <Filter>[amenity]='animal_shelter'</Filter>
+      <PointSymbolizer file="&symbols;/animal_shelter.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[amenity]='dog_park'</Filter>
+      <PointSymbolizer file="&symbols;/dog_park.png" placement="interior"/>
+    </Rule>
+    <Rule>
       &maxscale_zoom17;
       <Filter>[amenity]='atm'</Filter>
       <PointSymbolizer file="&symbols;/atm2.p.16.png" placement="interior"/>
@@ -24,6 +39,12 @@
       &maxscale_zoom17;
       <Filter>[amenity]='bar'</Filter>
       <PointSymbolizer file="&symbols;/bar.p.20.png" placement="interior"/>
+    </Rule>
+<!-- neu Nightclub, Musicclub am 27.01.2020 -->
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[amenity]='nightclub'</Filter>
+      <PointSymbolizer file="&symbols;/blue_note.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;

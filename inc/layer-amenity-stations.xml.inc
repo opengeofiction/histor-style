@@ -79,25 +79,71 @@
     <Rule>
       &maxscale_zoom13;
       &minscale_zoom14;
-      <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
+      <Filter>[railway]='halt' or [aerialway]='station'</Filter>
       <PointSymbolizer file="&symbols;/halt.png" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom15;
-      <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
+      <Filter>[railway]='halt' or [aerialway]='station'</Filter>
       <PointSymbolizer file="&symbols;/station_small.png" placement="interior"/>
+    </Rule>
+    <!-- Strassenbahn-Haltestelle 26.01.2020 -->
+    <Rule>
+      &maxscale_zoom13;
+      &minscale_zoom15;
+      <Filter>[railway]='tram_stop'</Filter>
+      <PointSymbolizer file="&symbols;/tram4.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='tram_stop'</Filter>
+      <PointSymbolizer file="&symbols;/tram6.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom13;
+      &minscale_zoom15;
+      <Filter>[railway]='busline_stop'</Filter>
+      <PointSymbolizer file="&symbols;/bus4.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='busline_stop'</Filter>
+      <PointSymbolizer file="&symbols;/bus6.png" placement="interior"/>
     </Rule>
 	<!-- Textsymbolisierungen kleine Bahnen -->
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom14;
-      <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
+      <Filter>[railway]='halt' or [aerialway]='station'</Filter>
       <TextSymbolizer size="8" fill="#66f" dy="-8" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       &maxscale_zoom15;
-      <Filter>[railway] ='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
+      <Filter>[railway]='halt' or [aerialway]='station'</Filter>
       <TextSymbolizer size="10" fill="#66f" dy="-10" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <!-- Textsymbolisierung Straßenbahnhaltestelle 26.01.2020 / und Bus 27.01.2020 -->
+    <Rule>
+      &maxscale_zoom15;
+      &minscale_zoom15;
+      <Filter>[railway]='tram_stop'</Filter>
+      <TextSymbolizer size="8" fill="red" dy="-8" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='tram_stop'</Filter>
+      <TextSymbolizer size="10" fill="red" dy="-10" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+   <Rule>
+      &maxscale_zoom15;
+      &minscale_zoom15;
+      <Filter>[railway]='busline_stop'</Filter>
+      <TextSymbolizer size="8" fill="green" dy="-8" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='busline_stop'</Filter>
+      <TextSymbolizer size="10" fill="green" dy="-10" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
 	<!-- Textsymbolisierung Eisenbahn  -->
     <Rule>
@@ -123,7 +169,7 @@
       <Parameter name="table">
       (select way,name,railway,aerialway,disused,service
       from &prefix;_point
-      where railway in ('station','halt','tram_stop','subway_entrance')
+      where railway in ('station','halt','tram_stop','busline_stop','subway_entrance')
          or aerialway='station'
       ) as stations
       </Parameter>
@@ -136,7 +182,7 @@
       <Parameter name="table">
       (select way,name,railway,aerialway,disused,service
       from &prefix;_polygon
-      where railway in ('station','halt','tram_stop')
+      where railway in ('station','halt','tram_stop','busline_stop')
          or aerialway='station'
       ) as stations
       </Parameter>
