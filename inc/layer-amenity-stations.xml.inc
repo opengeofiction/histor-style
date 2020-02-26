@@ -4,28 +4,40 @@
       <Filter>[railway]='subway_entrance'</Filter>
       <PointSymbolizer file="&symbols;/walking.n.12.png" placement="interior"/>
     </Rule>
-	<!-- undefinierte Eisenbahnstation -->
+<!-- weder main noch local noch metro, aber auch nicht disused -->
     <Rule>
       &maxscale_zoom11;
-      &minscale_zoom12;
+      &minscale_zoom13;
       <Filter>[railway]='station' and not ([disused] = 'yes' or [service]='main' or [service]='local' or [service]='metro') </Filter>
       <PointSymbolizer file="&symbols;/station08.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom13;
-      &minscale_zoom14;
+      &maxscale_zoom14;
+      &minscale_zoom15;
+      <Filter>[railway]='station' and not ([disused] = 'yes' or [service]='main' or [service]='local' or [service]='metro') </Filter>
+      <PointSymbolizer file="&symbols;/STAT09.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
       <Filter>[railway]='station' and not ([disused] = 'yes' or [service]='main' or [service]='local' or [service]='metro') </Filter>
       <PointSymbolizer file="&symbols;/station11.png" placement="interior"/>
     </Rule>
+<!-- disused Stations -->
     <Rule>
       &maxscale_zoom13;
+      &minscale_zoom15;
       <Filter>[railway]='station' and [disused]='yes'</Filter>
       <PointSymbolizer file="&symbols;/station_disused.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom15;
-      <Filter>[railway]='station' and not ([disused] = 'yes' or [service]='main' or [service]='local' or [service]='metro') </Filter>
-      <PointSymbolizer file="&symbols;/station11.png" placement="interior"/>
+      &maxscale_zoom16;
+      <Filter>[railway]='station' and [disused]='yes' and not [service]='metro'</Filter>
+      <PointSymbolizer file="&symbols;/station_disused.png" placement="interior"/>
+    </Rule>
+   <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='station' and [disused]='yes' and [service]='metro'</Filter>
+      <PointSymbolizer file="&symbols;/metunused.png" placement="interior"/>
     </Rule>
 	<!-- Hi-speed Eisenbahnstation -->
     <Rule>
@@ -57,23 +69,29 @@
        <Filter>[railway]='station' and [service]='local' and not [disused]='yes'</Filter>
       <PointSymbolizer file="&symbols;/local13.png" placement="interior"/>
     </Rule>
-	<!-- Untergrundbahnstation, Metro -->
+	<!-- Untergrundbahnstation, Metro (außer disused) -->
      <Rule>
       &maxscale_zoom11;
-      &minscale_zoom11;
+      &minscale_zoom12;
       <Filter>[railway]='station' and [service]='metro' and not [disused]='yes'</Filter>
       <PointSymbolizer file="&symbols;/halt.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom12;
-      &minscale_zoom13;
+      &maxscale_zoom13;
+      &minscale_zoom14;
       <Filter>[railway]='station' and [service]='metro' and not [disused]='yes'</Filter>
       <PointSymbolizer file="&symbols;/metro08.png" placement="interior"/>
     </Rule>
     <Rule>
-      &maxscale_zoom14;
+      &maxscale_zoom15;
+      &minscale_zoom15;
       <Filter>[railway]='station' and [service]='metro' and not [disused]='yes'</Filter>
       <PointSymbolizer file="&symbols;/metro10.png" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='station' and [service]='metro' and not [disused]='yes'</Filter>
+      <PointSymbolizer file="&symbols;/metro16.png" placement="interior"/>
     </Rule>
 	<!-- kleinere Bahnen -->
     <Rule>
@@ -110,7 +128,8 @@
       <Filter>[railway]='busline_stop'</Filter>
       <PointSymbolizer file="&symbols;/bus6.png" placement="interior"/>
     </Rule>
-	<!-- Textsymbolisierungen kleine Bahnen -->
+<!-- ShieldSym für Strassenbahn-Endstellen 07.02.2020 nicht realisiert-->
+<!-- Textsymbolisierungen kleine Bahnen -->
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom14;
@@ -122,32 +141,39 @@
       <Filter>[railway]='halt' or [aerialway]='station'</Filter>
       <TextSymbolizer size="10" fill="#66f" dy="-10" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
-    <!-- Textsymbolisierung Straßenbahnhaltestelle 26.01.2020 / und Bus 27.01.2020 -->
+ <!-- Textsymbolisierung Straßenbahnhaltestelle 26.01.2020 / und Bus 27.01.2020 -->
     <Rule>
-      &maxscale_zoom15;
-      &minscale_zoom15;
+      &maxscale_zoom16;
+      &minscale_zoom17;
       <Filter>[railway]='tram_stop'</Filter>
       <TextSymbolizer size="8" fill="red" dy="-8" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom18;
       <Filter>[railway]='tram_stop'</Filter>
       <TextSymbolizer size="10" fill="red" dy="-10" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
    <Rule>
-      &maxscale_zoom15;
-      &minscale_zoom15;
+      &maxscale_zoom16;
+      &minscale_zoom17;
       <Filter>[railway]='busline_stop'</Filter>
       <TextSymbolizer size="8" fill="green" dy="-8" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
-      &maxscale_zoom16;
+      &maxscale_zoom18;
       <Filter>[railway]='busline_stop'</Filter>
       <TextSymbolizer size="10" fill="green" dy="-10" fontset-name="book-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
-	<!-- Textsymbolisierung Eisenbahn  -->
-    <Rule>
+<!-- Textsymbolisierung Eisenbahnstationen und subway  -->
+      <Rule>
       &maxscale_zoom13;
+      &minscale_zoom13;
+      <Filter>[railway]='station' and not ([service]='metro' or  [disused]='yes')</Filter>
+      <TextSymbolizer size="9" fill="#66f" dy="-8" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+<!-- Subway-Station-Namen erst ab zoom 14 -->
+    <Rule>
+      &maxscale_zoom14;
       &minscale_zoom14;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
       <TextSymbolizer size="9" fill="#66f" dy="-8" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
@@ -163,6 +189,7 @@
       <TextSymbolizer size="9" fill="grey" dy="-9" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
 </Style>
+<!-- **** LAYER *** -->
 <Layer name="amenity-stations" status="on" srs="&osm2pgsql_projection;">
     <StyleName>stations</StyleName>
     <Datasource>

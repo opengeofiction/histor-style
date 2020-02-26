@@ -12,6 +12,12 @@
       <LineSymbolizer stroke="#666" stroke-width="0.3"/>
     </Rule>
     <Rule>
+      <Filter>[leisure] = 'dog_park'</Filter>
+      &maxscale_zoom13;
+      <PolygonSymbolizer fill="#b6fdb6"/>
+      <LineSymbolizer stroke="#666" stroke-width="0.3"/>
+    </Rule>
+    <Rule>
       <Filter>[tourism] = 'camp_site' or [tourism]='caravan_site' or [tourism] = 'picnic_site'</Filter>
       &maxscale_zoom13;
       <PolygonSymbolizer fill-opacity="0.5" fill="#ccff99"/>

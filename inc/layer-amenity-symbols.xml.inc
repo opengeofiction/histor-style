@@ -38,7 +38,7 @@
       <Filter>[aeroway]='aerodrome'</Filter>
       <TextSymbolizer size="8" fill="#6692da" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
-<!-- Hafensymbol -->
+<!-- Hafensymbole -->
      <Rule>
       &maxscale_zoom8;
       &minscale_zoom8;
@@ -75,7 +75,7 @@
       <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>
     <Rule>
-      &maxscale_zoom13;
+      &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[harbour]='container'</Filter>
       <PointSymbolizer file="&symbols;/container24.png"/>
@@ -88,8 +88,41 @@
       <PointSymbolizer file="&symbols;/container40.png"/>
       <TextSymbolizer size="10" fill="#6692da" dy="-36" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
     </Rule>  
+    <Rule>
+      &maxscale_zoom12;
+      &minscale_zoom13;
+      <Filter>[harbour]='cruise'</Filter>
+      <PointSymbolizer file="&symbols;/cruise20.png" allow-overlap='true'/>
+      <TextSymbolizer size="10" fill="#6692da" dy="-36" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom14;
+      &minscale_zoom16;
+      <Filter>[harbour]='cruise'</Filter>
+      <PointSymbolizer file="&symbols;/cruise30.png" allow-overlap='true'/>
+      <TextSymbolizer size="10" fill="#6692da" dy="-36" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom17;
+      &minscale_zoom19;
+      <Filter>[harbour]='cruise'</Filter>
+      <PointSymbolizer file="&symbols;/cruise45.png"/>
+      <TextSymbolizer size="10" fill="#6692da" dy="-36" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom14;
+      <Filter>[man_made]='beacon'</Filter>
+      <PointSymbolizer file="&symbols;/beacon.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[man_made]='crane'</Filter>
+      <PointSymbolizer file="&symbols;/crane.png"/>
+      <TextSymbolizer size="8" fill="#6692da" dy="-12" fontset-name="bold-fonts" halo-radius="1" wrap-width="0" placement="interior">[name]</TextSymbolizer>
+    </Rule>
 <!-- Bergwerke -->
-	 <Rule>
+    <Rule>
       &maxscale_zoom9;
       &minscale_zoom11;
       <Filter>[man_made]='coal'</Filter>
@@ -145,7 +178,7 @@
 <!-- Ölbohrungen -->
     <Rule>
       &maxscale_zoom10;
-	  &minscale_zoom12;
+      &minscale_zoom12;
       <Filter>[man_made]='borehole'</Filter>
       <PointSymbolizer file="&symbols;/oil09.png" placement="interior"/>
     </Rule>
@@ -213,12 +246,18 @@
       &maxscale_zoom15;
       &minscale_zoom16;
       <Filter>[natural]='tree'</Filter>
-      <PointSymbolizer file="&symbols;/tree.png" ignore-placement="true" placement="interior"/>
+      <PointSymbolizer file="&symbols;/tree1.png" ignore-placement="true" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
+      &minscale_zoom17;
       <Filter>[natural]='tree'</Filter>
       <PointSymbolizer file="&symbols;/tree2.png" ignore-placement="true" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom18;
+      <Filter>[natural]='tree'</Filter>
+      <PointSymbolizer file="&symbols;/tree3.png" ignore-placement="true" placement="interior"/>
     </Rule>
     <Rule>
       &maxscale_zoom15;
@@ -255,6 +294,17 @@
       <Filter>[barrier]='bollard' or [barrier]='block'</Filter>
       <PointSymbolizer file="&symbols;/bollard.png" allow-overlap="false" placement="interior"/>
     </Rule>
+    <Rule>
+      &maxscale_zoom14;
+      &minscale_zoom16;
+      <Filter>[barrier]='toll_booth'</Filter>
+      <PointSymbolizer file="&symbols;/toll24.png" allow-overlap="true" placement="interior"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom17;
+      <Filter>[barrier]='toll_booth'</Filter>
+      <PointSymbolizer file="&symbols;/toll32.png" allow-overlap="true" placement="interior"/>
+    </Rule>
 </Style>
 
 <Layer name="amenity-symbols" status="on" srs="&osm2pgsql_projection;">
@@ -264,10 +314,10 @@
       (select *
       from &prefix;_point
       where aeroway in ('airport','aerodrome','helipad')
-         or harbour in ('main','navy','middle','small','container')
-         or barrier in ('bollard','gate','lift_gate','block')
+         or harbour in ('main','navy','middle','small','container','cruise')
+         or barrier in ('bollard','gate','lift_gate','block','toll_booth')
          or highway in ('mini_roundabout','gate')
-         or man_made in ('coal','copper','metal','mineral_water','lighthouse','power_wind','windmill','mast','borehole','tidalway')
+         or man_made in ('coal','copper','metal','mineral_water','lighthouse','power_wind','windmill','mast','borehole','tidalway','beacon','crane')
          or (power='generator' and ("generator:source"='wind' or power_source='wind'))
          or "natural" in ('peak','volcano','depth','spring','tree','cave_entrance')
          or railway='level_crossing'
@@ -282,10 +332,10 @@
       (select *
       from &prefix;_polygon
       where aeroway in ('airport','aerodrome','helipad')
-         or harbour in ('main','navy','middle','small','container')
-         or barrier in ('bollard','gate','lift_gate','block')
+         or harbour in ('main','navy','middle','small','container','cruise')
+         or barrier in ('bollard','gate','lift_gate','block','toll_booth')
          or highway in ('mini_roundabout','gate')
-         or man_made in ('coal','copper','metal','mineral_water','lighthouse','power_wind','windmill','mast','borehole','tidalway')
+         or man_made in ('coal','copper','metal','mineral_water','lighthouse','power_wind','windmill','mast','borehole','tidalway','beacon','crane')
          or (power='generator' and ("generator:source"='wind' or power_source='wind'))
          or "natural" in ('peak','volcano','depth','spring','tree')
          or railway='level_crossing'

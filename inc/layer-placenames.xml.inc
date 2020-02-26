@@ -166,18 +166,24 @@
       <Filter>[place] = 'suburb'</Filter>
       &maxscale_zoom12;
       &minscale_zoom13;
-      <TextSymbolizer size="10" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      <TextSymbolizer size="10" fill="#800000" fontset-name="oblique-fonts" halo-radius="2" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'suburb'</Filter>
       &maxscale_zoom14;
-      &minscale_zoom15;
-      <TextSymbolizer size="14" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      &minscale_zoom14;
+      <TextSymbolizer size="15" fill="#800000" fontset-name="oblique-fonts" halo-radius="2" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
       <Filter>[place] = 'suburb'</Filter>
-      &maxscale_zoom16;
-      <TextSymbolizer size="18" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+      &maxscale_zoom15;
+      &minscale_zoom16;
+      <TextSymbolizer size="20" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[place] = 'suburb'</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer size="16" fill="#800000" fontset-name="oblique-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <Style name="village">
